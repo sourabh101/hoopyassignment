@@ -88,12 +88,12 @@ public class FetchDataActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                fetchDataViewModel.checkEmailValidity(s.toString());
+
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-
+                fetchDataViewModel.checkEmailValidity(s.toString());
             }
         });
 
@@ -105,12 +105,12 @@ public class FetchDataActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                fetchDataViewModel.checkPhoneNumberValidity(s.toString());
+
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-
+                fetchDataViewModel.checkPhoneNumberValidity(s.toString());
             }
         });
 

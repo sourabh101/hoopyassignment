@@ -166,12 +166,12 @@ public class UpdateUserActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                updateUserViewModel.checkEmailValidity(s.toString());
+
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-
+                updateUserViewModel.checkEmailValidity(s.toString());
             }
         });
 
@@ -183,12 +183,12 @@ public class UpdateUserActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                updateUserViewModel.checkPhoneNumberValidity(s.toString());
+
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-
+                updateUserViewModel.checkPhoneNumberValidity(s.toString());
             }
         });
 
